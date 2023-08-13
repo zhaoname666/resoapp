@@ -86,6 +86,7 @@ export default {
     };
   },
   created() {
+    // this.arr = JSON.parse(localStorage.getItem("arr11"));
     this.$bus.$on("xxx", this.fun);
     this.$bus.$on("xx", this.fun1);
   },
@@ -127,9 +128,7 @@ export default {
     msg: String,
   },
   beforeUpdate() {
-    if (JSON.parse(localStorage.getItem("arr11")) !== null) {
-      console.log(JSON.parse(localStorage.getItem("arr11")));
-    }
+    this.arr = JSON.parse(localStorage.getItem("arr11"));
   },
 };
 </script>
