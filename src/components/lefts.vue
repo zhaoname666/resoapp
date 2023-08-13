@@ -161,7 +161,9 @@ export default {
     },
   },
   mounted() {
-    this.arr = JSON.parse(localStorage.getItem("arr11"));
+    if (localStorage.getItem("arr11") != null) {
+      this.arr = JSON.parse(localStorage.getItem("arr11"));
+    }
   },
   computed: {
     no() {
