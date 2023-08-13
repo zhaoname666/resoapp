@@ -173,9 +173,6 @@ export default {
   props: {
     msg: String,
   },
-  beforeUpdate() {
-    this.arr = JSON.parse(localStorage.getItem("arr11"));
-  },
 };
 </script>
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
