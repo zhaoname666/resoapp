@@ -119,7 +119,7 @@ export default {
       this.txs = index;
       alert("订阅成功");
       this.arr[0].arr1.push(item);
-      console.log(this.arr[0].arr1);
+
       localStorage.setItem("arr11", JSON.stringify(this.arr));
     },
     fun(value) {
@@ -131,7 +131,6 @@ export default {
         this.show = true;
         this.ss = false;
       }
-      console.log(value);
     },
     btn1(index) {
       this.s = index;
@@ -157,7 +156,6 @@ export default {
       //   return item.name;
       // });
       this.arr[this.i].arr1 = res;
-      console.log(222);
     },
   },
   mounted() {

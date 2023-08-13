@@ -43,9 +43,7 @@ export default {
       i: 1,
     };
   },
-  mounted() {
-    console.log(this.arr);
-  },
+  mounted() {},
   methods: {
     btn(index) {
       this.i = index;
