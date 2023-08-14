@@ -128,7 +128,9 @@ export default {
     msg: String,
   },
   beforeUpdate() {
-    this.arr = JSON.parse(localStorage.getItem("arr11"));
+    if (JSON.parse(localStorage.getItem("arr11") != null)) {
+      this.arr = JSON.parse(localStorage.getItem("arr11"));
+    }
   },
 };
 </script>

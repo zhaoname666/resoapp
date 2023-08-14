@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import mixins from "./components/mixin"
+import 'animate.css';
+
 Vue.mixin(mixins)
 Vue.config.productionTip = false
 

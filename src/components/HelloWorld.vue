@@ -46,6 +46,7 @@ export default {
   mounted() {},
   methods: {
     btn(index) {
+      console.log(index);
       this.i = index;
       this.$bus.$emit("xxx", index);
     },
