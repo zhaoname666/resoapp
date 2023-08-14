@@ -70,6 +70,7 @@ span:hover {
         :key="index"
         :style="s == index ? colors : ''"
         @click="btn1(index)"
+        v-draggable
       >
         <img :src="item.src" alt="" /><span class="bo2" style="color: white">{{
           item.name
